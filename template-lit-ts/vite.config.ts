@@ -6,6 +6,12 @@ import manifest from './src/manifest'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    server: {
+      hmr: {
+        path: 'localhost',
+        port: 1234,
+      },
+    },
     emptyOutDir: true,
     outDir: 'build',
     rollupOptions: {

@@ -5,6 +5,12 @@ import manifest from './src/manifest'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+    server: {
+      hmr: {
+        path: 'localhost',
+        port: 1234,
+      },
+    },
     build: {
       emptyOutDir: true,
       outDir: 'build',

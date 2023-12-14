@@ -8,6 +8,12 @@ export default defineConfig(({ mode }) => {
   const production = mode === 'production'
 
   return {
+    server: {
+      hmr: {
+        path: 'localhost',
+        port: 1234,
+      },
+    },
     build: {
       emptyOutDir: true,
       outDir: 'build',
