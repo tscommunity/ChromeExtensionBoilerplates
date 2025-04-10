@@ -32,5 +32,8 @@ export default defineConfig(({ mode }) => {
         preprocess: sveltePreprocess(),
       }),
     ],
+    legacy: {
+      skipWebSocketTokenCheck: true,
+    },
   }
 })

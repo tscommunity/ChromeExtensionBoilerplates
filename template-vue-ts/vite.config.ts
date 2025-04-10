@@ -25,5 +25,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [crx({ manifest }), vue()],
+    legacy: {
+      skipWebSocketTokenCheck: true,
+    },
   }
 })

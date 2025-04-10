@@ -22,5 +22,8 @@ export default defineConfig(() => {
     },
 
     plugins: [crx({ manifest })],
+    legacy: {
+      skipWebSocketTokenCheck: true,
+    },
   }
 })

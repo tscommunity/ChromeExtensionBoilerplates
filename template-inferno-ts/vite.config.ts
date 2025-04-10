@@ -23,5 +23,8 @@ export default defineConfig(({ mode }) => {
     },
 
     plugins: [crx({ manifest }), inferno()],
+    legacy: {
+      skipWebSocketTokenCheck: true,
+    },
   }
 })
