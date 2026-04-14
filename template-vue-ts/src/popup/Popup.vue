@@ -102,7 +102,7 @@ h3 {
     outline: none;
 
     width: 3rem;
-    margin: 0 a;
+    margin: 0 auto;
   }
 
   > label {

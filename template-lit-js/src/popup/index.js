@@ -81,7 +81,7 @@ export class Popup extends LitElement {
       outline: none;
 
       width: 3rem;
-      margin: 0 a;
+      margin: 0 auto;
     }
 
     .calc label {
